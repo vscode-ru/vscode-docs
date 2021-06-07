@@ -1,79 +1,79 @@
 <p align="center">
   <img alt="vscode logo" src="images/logo-stable.png" width="100px" />
-  <h1 align="center">Visual Studio Code Documentation</h1>
+  <h1 align="center">Документация Visual Studio Code</h1>
 </p>
 
-You've found the Visual Studio Code documentation GitHub repository, which contains the content for the [Visual Studio Code documentation](https://code.visualstudio.com/docs).
+Вы нашли репозиторий GitHub документации Visual Studio Code, который содержит контент для [документации Visual Studio Code](https://code.visualstudio.com/docs).
 
-Topics submitted here will be published to the [Visual Studio Code](https://code.visualstudio.com) portal.
+Отправленные здесь темы будут опубликованы на портале [Visual Studio Code](https://code.visualstudio.com).
 
-If you are looking for the VS Code product GitHub repository, you can find it [here](https://github.com/microsoft/vscode).
+Если вы ищете репозиторий GitHub продукта VS Code, вы можете найти его [здесь](https://github.com/microsoft/vscode).
 
-## Index
+## Указатель
 
-- [Index](#index)
+- [Указатель](#указатель)
 - [Visual Studio Code](#visual-studio-code)
-- [Feedback](#feedback)
-- [Documentation Issues](#documentation-issues)
-- [Contributing](#contributing)
-  - [Workflow](#workflow)
-  - [Cloning](#cloning)
-    - [Cloning without binary files](#cloning-without-binary-files)
-- [Publishing](#publishing)
+- [Обратная связь](#обратная-связь)
+- [Проблемы с документацией](#проблемы-с-документацией)
+- [Содействие](#содействие)
+  - [Рабочий процесс](#рабочий-процесс)
+  - [Клонирование](#клонирование)
+    - [Клонирование без двоичных файлов](#клонирование-без-двоичных-файлов)
+- [Публикация](#публикация)
 
 ## Visual Studio Code
 
-[VS Code](https://code.visualstudio.com/) is a lightweight source code editor and powerful development environment for building and debugging modern web, mobile and cloud applications. It is free and available on your favorite platform - Linux, macOS, and Windows.
+[VS Code](https://code.visualstudio.com/) - это легкий редактор исходного кода и мощная среда разработки для создания и отладки современных веб-приложений, мобильных и облачных приложений. Это бесплатно и доступно на вашей любимой платформе - Linux, macOS и Windows.
 
-If you landed here looking for other information about VS Code, head over to [our website](https://code.visualstudio.com) for additional information.
+Если вы попали сюда в поисках другой информации о VS Code, перейдите на [наш веб-сайт](https://code.visualstudio.com) для получения дополнительной информации.
 
-## Feedback
+## Обратная связь
 
-If you want to give documentation feedback, please use the feedback control located at the bottom of each documentation page.
+Если вы хотите оставить отзыв о документации, используйте элемент управления обратной связью, расположенный в нижней части каждой страницы документации.
 
-## Documentation Issues
+## Проблемы с документацией
 
-To enter documentation bugs, please create a [new GitHub issue](https://github.com/microsoft/vscode-docs/issues). Please check if there is an existing issue first.
+Чтобы сообщить об ошибках в документации, создайте [новую проблему GitHub](https://github.com/microsoft/vscode-docs/issues). Пожалуйста, сначала проверьте, существует ли проблема.
 
-If you think the issue is with the VS Code product itself, please enter issues in the VS Code product repo [here](https://github.com/microsoft/vscode/issues).
+Если вы считаете, что проблема связана с самим продуктом VS Code, укажите проблемы в репозитории продукта VS Code [здесь](https://github.com/microsoft/vscode/issues).
 
-## Contributing
+## Содействие
 
-To contribute new topics/information or make changes to existing documentation, please read the [Contributing Guideline](./CONTRIBUTING.md#contributing).
+Чтобы добавить новые темы/информацию или внести изменения в существующую документацию, прочтите [Правила участия](./CONTRIBUTING.md#contributing).
 
-### Workflow
+### Рабочий процесс
 
-The two suggested workflows are:
+Два предлагаемых рабочих процесса:
 
-- For small changes, use the "Edit" button on each page to edit the Markdown file directly on GitHub.
-- If you plan to make significant changes or preview the Markdown files in VS Code, [clone](#cloning) the repo to [edit and preview](https://code.visualstudio.com/docs/languages/markdown) the files directly in VS Code.
+- Для небольших изменений используйте кнопку «Изменить» на каждой странице, чтобы отредактировать файл Markdown прямо на GitHub.
+- Если вы планируете внести значительные изменения или предварительно просмотреть файлы Markdown в VS Code, [клонируйте](#cloning) репозиторий и [редактируйте и просматривайте](https://code.visualstudio.com/docs/languages/markdown) файлы прямо в VS Code.
 
-![Markdown Preview Button](images/MDPreviewButton.png)
+![Кнопка предварительного просмотра Markdown](images/MDPreviewButton.png)
 
-### Cloning
+### Клонирование
 
-1. Install [Git LFS](https://git-lfs.github.com/).
-2. Run `git lfs install` to setup global git hooks. You only need to run this once per machine.
+1. Установите [Git LFS](https://git-lfs.github.com/).
+2. Запустите `git lfs install`, чтобы настроить глобальные хуки git. Вам нужно запустить это только один раз для каждой машины.
 3. `git clone git@github.com:Microsoft/vscode-docs.git`.
-4. Now you can `git add` binary files and commit them. They'll be tracked in LFS.
+4. Теперь вы можете использовать двоичные файлы `git add` и зафиксировать их. Они будут отслеживаться в LFS.
 
-#### Cloning without binary files
+#### Клонирование без двоичных файлов
 
-You might want to clone the repo without the 1.6GB images. Here are the steps:
+Возможно, вы захотите клонировать репозиторий без изображений размером 1,6 ГБ. Вот шаги:
 
-1. Install [Git LFS](https://git-lfs.github.com/).
-2. Run `git lfs install` to setup global git hooks. You only need to run this once per machine.
-3. Clone the repo without binary files.
+1. Установите [Git LFS](https://git-lfs.github.com/).
+2. Запустите `git lfs install`, чтобы настроить глобальные хуки git. Вам нужно запустить это только один раз для каждой машины.
+3. Клонируйте репо без двоичных файлов.
     - macOS / Linux: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:Microsoft/vscode-docs.git`.
     - Windows: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:Microsoft/vscode-docs.git`.
-4. Now you can selectively checkout some binary files to work with. For example:
-    - `git lfs pull -I "docs/nodejs"` to only download images in `docs/nodejs`
-    - `git lfs pull -I "release-notes/images/1_4*/*"` to only download images in `release-notes/images/1_4*`
-    - `git lfs pull -I "docs,api"` to download all images in `docs` and in `api`
-    - `git lfs pull -I <PATTERN>`, as long as `<PATTERN>` is a valid [Git LFS Include and Exclude pattern](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-fetch.1.ronn#include-and-exclude).
+4. Теперь вы можете выборочно проверять некоторые двоичные файлы для работы. Например:
+    - `git lfs pull -I "docs/nodejs"` для загрузки изображений только в `docs/nodejs`
+    - `git lfs pull -I "release-notes/images/1_4*/*"` для загрузки изображений только в `release-notes/images/1_4*`
+    - `git lfs pull -I "docs,api"` для загрузки всех изображений в `docs` и `api`
+    - `git lfs pull -I <PATTERN>`, если `<PATTERN>` является допустимым [шаблон включения и исключения Git LFS](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-fetch.1.ronn#include-and-exclude).
 
-The history of this repo before we adopted LFS can be found at [microsoft/vscode-docs-archive](https://github.com/microsoft/vscode-docs-archive).
+Историю этого репозитория до внедрения LFS можно найти по адресу [microsoft/vscode-docs-archive](https://github.com/microsoft/vscode-docs-archive).
 
-## Publishing
+## Публикация
 
-Steps for how to publish documentation changes can be found [here](https://github.com/microsoft/vscode-website#publishing-a-documentation-change) in the (private) repository of the VS Code website.
+Инструкции по публикации изменений документации можно найти [здесь](https://github.com/microsoft/vscode-website#publishing-a-documentation-change) в (приватном) репозитории веб-сайта VS Code.
