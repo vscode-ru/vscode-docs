@@ -1,51 +1,51 @@
-# Visual Studio Code Documentation
+# Документация Visual Studio Code
 
-You've found the GitHub repository that contains the source for the Visual Studio Code documentation at <https://code.visualstudio.com/docs>.
+Вы нашли репозиторий GitHub, содержащий исходный код документации Visual Studio Code, по адресу <https://code.visualstudio.com/docs>.
 
-## Contribute to VS Code documentation
+## Вклад в документацию VS Code
 
-Thank you for your interest in VS Code documentation!
+Спасибо за интерес к документации VS Code!
 
-* [Contributing](#contributing)
-* [Documentation intent](#documentation-intent)
-* [Repository organization](#repository-organization)
-* [Branches](#branches)
-* [Authoring Tools](#authoring-tools)
-* [How to use Markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
-* [Topic Metadata](#topic-metadata)
-* [Formatting](#formatting)
+* [Содействие](#содействие)
+* [Назначение документации](#назначение-документации)
+* [Организация репозитория](#организация-репозитория)
+* [Ветки](#ветки)
+* [Инструменты для разработки](#инструменты-для-разработки)
+* [Как использовать Markdown для форматирования темы](#как-использовать-markdown-для-форматирования-темы)
+* [Метаданные темы](#метаданные-темы)
+* [Форматирование](#форматирование)
 
->**Note**: Before submitting a pull request, especially for rendering or link issues, please review the content on the official VS Code website, [code.visualstudio.com](https://code.visualstudio.com). The element in question may render correctly after processing by the website build.
+>**Примечание**: Перед отправкой ПР, особенно для проблем с рендерингом или связью, просмотрите содержимое на официальном веб-сайте, [code.visualstudio.com](https://code.visualstudio.com). Рассматриваемый элемент может правильно отображаться после обработки сборкой веб-сайта.
 
-## Contributing
+## Содействие
 
-To contribute to [VS Code documentation](https://code.visualstudio.com/docs), you need to fork this repository and submit a pull request for the Markdown and/or image changes that you're proposing.
+Чтобы внести свой вклад в [документацию VS Code](https://code.visualstudio.com/docs), вам необходимо форкнуть этот репозиторий и отправить ПР для предлагаемых вами изменений Markdown и/или изображений.
 
-* [How to fork a repository](https://help.github.com/articles/fork-a-repo)
-* [How to make a pull request](https://help.github.com/articles/creating-a-pull-request/)
-* [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
-* [How to squash commits](https://help.github.com/articles/about-pull-request-merges/)
+* [Как форкнуть репозиторий](https://help.github.com/articles/fork-a-repo)
+* [Как сделать пул-реквест](https://help.github.com/articles/creating-a-pull-request/)
+* [Изменение сообщения о фиксации](https://help.github.com/articles/changing-a-commit-message/)
+* [Как сжимать коммиты](https://help.github.com/articles/about-pull-request-merges/)
 
-The vscode-docs repository supports [Git LFS](https://git-lfs.github.com/) to allow you to avoid bringing down large image files when you clone the repository. See the [README](README.md#contributing) section for details on enabling Git LFS for your local repository.
+Репозиторий vscode-docs поддерживает [Git LFS](https://git-lfs.github.com/), что позволяет избежать потери больших файлов изображений при клонировании репозитория. Смотрите раздел [README](README.md#содействие) для получения подробной информации о включении Git LFS для вашего локального репозитория.
 
-## Documentation intent
+## Назначение документации
 
-The goal of the VS Code documentation is to educate users on VS Code features and how VS Code can be used to enhance their development experience with different programming languages and runtimes.
+Цель документации VS Code - обучить пользователей функциям VS Code и тому, как VS Code можно использовать для улучшения их опыта разработки с помощью различных языков программирования и сред выполнения.
 
-The documentation is not intended to provide:
+Документация не предназначена для предоставления:
 
-* An introduction to coding or software development
-* Tutorials on technologies independent from VS Code
-* Promotion of third-party tools, plug-ins, or services
-* Excessive detail or advanced walkthroughs
+* Введение в коддинг или разработку программного обеспечения
+* Учебники по технологиям, не зависящим от VS Code
+* Продвижение сторонних инструментов, плагинов или услуг
+* Излишняя детализация или расширенные пошаговые инструкции
 
-The documentation should target developers learning to use VS Code or searching for quick answers to commonly asked questions.  Other forums such as blog posts can provide more detailed content elaborating on specific scenarios.
+Документация должна быть нацелена на разработчиков, которые учатся использовать VS Code или ищут быстрые ответы на часто задаваемые вопросы. Другие форумы, такие как сообщения в блогах, могут предоставить более подробный контент по конкретным сценариям.
 
-## Repository organization
+## Организация репозитория
 
-The content in this repository follows the organization of documentation at <https://code.visualstudio.com/docs>.
+Содержимое в этом репозитории соответствует структуре документации на <https://code.visualstudio.com/docs>.
 
-This repository contains the following folders:
+Этот репозиторий содержит следующие папки:
 
 * \setup
 * \introvideos
@@ -60,129 +60,129 @@ This repository contains the following folders:
 * \other
 * \supporting
 
-Within these folders, you'll find the Markdown files used for the content. Each of these folders also contains an `\images` folder that references the images (such as screenshots) used in the topics.
+В этих папках вы найдете файлы Markdown, используемые для содержимого. Каждая из этих папок также содержит папку `\images`, которая ссылается на изображения (например, снимки экрана), используемые в темах.
 
-### Branches
+### Ветки
 
-We recommend that you create local working branches that target a specific scope of change (and then submit a pull request when your changes are ready). Each branch should be limited to a single concept/topic, both to streamline work flow, and to reduce the possibility of merge conflicts.  The following efforts are of the appropriate scope for a new branch:
+Мы рекомендуем вам создать локальные рабочие ветки, нацеленные на конкретную область изменений (а затем отправить пул-реквест, когда ваши изменения будут готовы). Каждая ветка должна быть ограничена одной концепцией/темой, чтобы упростить рабочий процесс и уменьшить вероятность конфликтов слияния. Следующие меры подходят для новой ветки:
 
-* A new topic (and associated images).
-* Spelling and grammar edits on a topic.
-* Applying a single formatting change across a large set of topics.
+* Новая тема (и связанные изображения).
+* Орфографические и грамматические правки по теме.
+* Применение единого изменения форматирования к большому набору тем.
 
-## Authoring tools
+## Инструменты для разработки
 
-[Visual Studio Code](https://code.visualstudio.com) is a great editor for Markdown!
+[Visual Studio Code](https://code.visualstudio.com) - отличный редактор для Markdown!
 
-In fact, VS Code and its core documentation are written using VS Code.
+Фактически, VS Code и его основная документация написаны с использованием VS Code.
 
-## How to use Markdown to format your topic
+## Как использовать Markdown для форматирования темы
 
-The topics in this repository use Markdown.  Here is a good overview of [Markdown basics](https://help.github.com/articles/markdown-basics/).
+Темы в этом репозитории используют Markdown. Вот хороший обзор [основ Markdown](https://help.github.com/articles/markdown-basics/).
 
-## Topic Metadata
+## Метаданные темы
 
-Topic metadata enables certain functionalities for the topics such as table of contents order, topic descriptions, and online search optimization as well as aiding Microsoft in evaluating the effectiveness of the content.
+Метаданные тем обеспечивают определенные функции для тем, такие как порядок оглавления, описания тем и оптимизация поиска в Интернете, а также помогают Microsoft в оценке эффективности содержимого.
 
-* **Order** - This is the order that is used in the left rail TOC, the page is left out of the TOC if this is blank.
-* **Area** - General area within VS Code. Corresponds to the high-level Table of Contents (TOC) node.
-* **TOCTitle** - The title used in the left rail Table of Contents for this page.
-* **PageTitle** - The title used in the HTML title for the page and in search results.
-* **ContentId** - A GUID that uniquely identifies the topic to DevDiv doc reporting.
-* **DateApproved** - This is set when the page is published on the VS Code website. You can ignore it.
-* **MetaDescription** - The meta description for this page, which helps for search. Use sentence structure limited to 300 characters.
-* **MetaSocialImage** - Optional. Used for og:image in page header for sharing on social media. Should be 1024 x 512 .png.
-* **MetaTags** - Optional. Further tags for this page again for search.
+* **Order** - это порядок, который используется в оглавлении левой направляющей, страница не входит в оглавление, если это поле пусто.
+* **Area** - общая область в VS Code. Соответствует высокоуровневому узлу содержания (TOC).
+* **TOCTitle** - заголовок, используемый в левой части содержания этой страницы.
+* **PageTitle** - заголовок, используемый в заголовке HTML для страницы и в результатах поиска.
+* **ContentId** - GUID, который однозначно определяет тему для отчетов документации DevDiv.
+* **DateApproved** - устанавливается, когда страница публикуется на веб-сайте VS Code. Вы можете игнорировать это.
+* **MetaDescription** - метаописание для этой страницы, которое помогает при поиске. Используйте структуру предложения, ограниченную 300 символами.
+* **MetaSocialImage** - необязательно. Используется для og:image в заголовке страницы для публикации в социальных сетях. Должно быть 1024 x 512 .png.
+* **MetaTags** - необязательно. Дополнительные теги для этой страницы снова для поиска.
 
-## Product name
+## Название продукта
 
-Use the full product name "Visual Studio Code" in the topic MetaDescription and the first use in a topic. You can use the shortened "VS Code" after that throughout the rest of the content. Do not use "VSCode" (no space) or "Code".
+Используйте полное название продукта «Visual Studio Code» в теме MetaDescription и первое использование в теме. После этого вы можете использовать сокращенный VS Code во всем остальном контенте. Не используйте «VSCode» (без пробелов) или «Code».
 
-### Metadata for /api docs
+### Метаданные дл /api документации
 
 **For Writer**:
 
-* **MetaDescription** - The meta description for this page, which helps for search.
+* **MetaDescription** - Мета-описание этой страницы, которое помогает при поиске.
 
 **For Doc Maintainer**:
 
-* **DateApproved** - This is set when the page is published on the VS Code website.
+* **DateApproved** - Это устанавливается, когда страница публикуется на веб-сайте VS Code.
 
-## Formatting
+## Форматирование
 
-### Headings & Right Nav
+### Заголовки и правая навигация
 
-H2 subheadings `##` end up in the right-hand jump list for the document (the jump list is created by our compile script).  It's a good idea to include h2 subheadings to help users get an overview of the doc and quickly navigate to the major topics.
+Подзаголовки H2 `##` попадают в правый список переходов для документа (список переходов создается нашим скриптом компиляции). Рекомендуется включать подзаголовки h2, чтобы помочь пользователям получить обзор документа и быстро перейти к основным темам.
 
-### Text formatting
+### Форматирование текста
 
-Use bold for VS Code commands and UI elements.
+Используйте полужирный шрифт для команд VS Code и элементов пользовательского интерфейса.
 
     **Extensions: Install Extension**
     **Debug Console**
 
-Limit the use of bold for emphasis unless it is crucial to get the user's attention. Avoid the use of italics for emphasis since italics doesn't render well on the code.visualstudio.com site.
+Ограничьте использование полужирного шрифта для выделения, если это не критично для привлечения внимания пользователя. Избегайте использования курсива для выделения, поскольку курсив плохо отображается на сайте code.visualstudio.com.
 
-Use inline code formatting (backticks) for settings, filename, and JSON attributes.
+Используйте встроенное форматирование кода (обратные кавычки) для настроек, имени файла и атрибутов JSON.
 
     `files.exclude`
     `tasks.json`
     `preLaunchTask`
 
-Use '>' to show menu sequence.
+Используйте '>' для отображения последовательности меню.
 
     **File** > **Preferences** > **Settings**
     **View** > **Command Palette**
 
-### Links
+### Ссылки
 
-For links within our own documentation, use a site relative link like `/docs/editor/codebasics.md`.
+Для ссылок в нашей собственной документации используйте относительную ссылку сайта, например `/docs/editor/codebasics.md`.
 
->For example: `[Why VS Code](/docs/editor/whyvscode.md)` - links to the **Why Visual Studio Code** page
+>Например: `[Почему VS Code](/docs/editor/whyvscode.md)` - ссылки на страницу **Почему Visual Studio Code**
 
->**Note:** For navigation on GitHub, you should add the .md suffix.  The suffix is removed during conversion to HTML.
+>**Примечание:** Для навигации по GitHub вы должны добавить суффикс .md. Суффикс удаляется при преобразовании в HTML.
 
-### Bookmarks
+### Закладки
 
-To provide links to h2 subheadings (Markdown ##), the format is `[Link Text](page.md#subheading-title)`.
+Чтобы предоставить ссылки на подзаголовки h2 (Markdown ##), используйте формат `[Текст ссылки](page.md#subheading-title)`.
 
-Note the subheading title is lowercase and subheading title words are separated by '-' hyphens.
+Обратите внимание, что заголовок подзаголовка написан в нижнем регистре, а слова заголовка разделены дефисами '-' hyphens.
 
->For example: `[Keyboard Shortcuts](/docs/editor/codebasics.md#keyboard-shortcuts)` - links to https://code.visualstudio.com/docs/editor/codebasics#_keyboard-shortcuts.
+>Например: `[Клавиши быстрого доступа](/docs/editor/codebasics.md#keyboard-shortcuts)` - ссылки на https://code.visualstudio.com/docs/editor/codebasics#_keyboard-shortcuts.
 
-### Images
+### Изображения
 
-Images are important to bring the product to life and clarify the written content.
+Изображения важны для того, чтобы оживить продукт и прояснить письменное содержание.
 
-For images you're adding to the repo, store them in the `images` subfolder of the TOC section, for example: `editor\images\debugging`.
+Для изображений, которые вы добавляете в репозиторий, сохраните их в подпапке `images` раздела TOC, например: `editor\images\debugging`.
 
-When you link to an image, the path and filename are case-sensitive.  The convention is for image filenames to be all lowercase.
+Когда вы ссылаетесь на изображение, путь и имя файла чувствительны к регистру. По соглашению имена файлов изображений должны быть в нижнем регистре.
 
->For example: `![Debug Breakpoints](images/debugging/breakpoints.png)`
+>Например: `![Точки останова отладки](images/debugging/breakpoints.png)`
 
-### Key bindings
+### Привязки клавиш
 
-The VS Code website is able to show the correct key bindings depending on the reader's operating system (macOS, Windows, or Linux).
+Веб-сайт VS Code может отображать правильные привязки клавиш в зависимости от операционной системы читателя (macOS, Windows или Linux).
 
-To enable this for keyboard shortcuts, use the format `kb(workbench.action.files.openFile)` where the command identifier is included in parentheses.
+Чтобы включить это для сочетаний клавиш, используйте формат `kb(workbench.action.files.openFile)`, где идентификатор команды заключен в круглые скобки.
 
->For a list of key bindings and the relevant `Command Ids`, review the [key bindings document](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts).
+>Список привязок клавиш и соответствующие `Command Ids`, смотрите в [документации о привязках клавиш](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts).
 
-If you are listing out multiple key bindings, you can use a table.
+Если вы перечисляете несколько привязок клавиш, вы можете использовать таблицу.
 
->Shortcut|Key Strokes
+>Клавиши быстрого доступа|Нажатия клавиш
 >--------|-----------
->Cut|`kb(editor.action.clipboardCutAction)`
->Copy|`kb(editor.action.clipboardCopyAction)`
->Paste|`kb(editor.action.clipboardPasteAction)`
+>Вырезать|`kb(editor.action.clipboardCutAction)`
+>Копировать|`kb(editor.action.clipboardCopyAction)`
+>Вставить|`kb(editor.action.clipboardPasteAction)`
 
-### Source Code
+### Исходный код
 
-For source code, we use the fenced code block notation ```` ``` ````.
+Для исходного кода мы используем обозначение изолированного блока кода ```` ``` ````.
 
->**Note:** You can add an optional language identifier to enable syntax highlighting in your fenced code block. For example, ```` ```json ```` or ```` ```javascript ````. [Read more →](https://help.github.com/articles/creating-and-highlighting-code-blocks/#syntax-highlighting)
+>**Примечание:** Вы можете добавить необязательный идентификатор языка, чтобы включить подсветку синтаксиса в изолированном блоке кода. Например, ```` ```json ```` или ```` ```javascript ````. [Читать дальше →](https://help.github.com/articles/creating-and-highlighting-code-blocks/#syntax-highlighting)
 
-An example of JavaScript source code:
+Пример исходного кода JavaScript:
 
 ```javascript
 function fancyAlert(arg) {
@@ -192,21 +192,21 @@ function fancyAlert(arg) {
 }
 ```
 
-## Gotchas
+## Подводные камни
 
-### Double opening curly braces break generated handlebar files
+### Двойные открывающиеся фигурные скобки прерывают сгенерированные файлы
 
-Escape double opening curly braces in code blocks.
+Избегайте двойных открывающих фигурных скобок в блоках кода.
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Hello, Flask</title>
+        <title>Привет, Фласк</title>
     </head>
     <body>
-        <strong>Hello there, \{{ name }}!</strong> It's \{{ date.strftime("%A, %d %B, %Y at %X") }}.
+        <strong>Привет, \{{ name }}!</strong> It's \{{ date.strftime("%A, %d %B, %Y at %X") }}.
     </body>
 </html>
 ```
